@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/springai/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mcp-client" />
+        <module name="springai" />
         <module name="mcp-service" />
+        <module name="mcp-client" />
+        <module name="springai-demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -15,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mcp-client" options="-parameters" />
       <module name="mcp-service" options="-parameters" />
+      <module name="springai-demo" options="-parameters" />
     </option>
   </component>
 </project>

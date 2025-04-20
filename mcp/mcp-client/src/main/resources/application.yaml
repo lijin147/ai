@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: ai-springboot-mcp-client
+  #main:
+  #  web-application-type: none
+  ai:
+    mcp:
+      client:
+        stdio:
+          connections:
+            ai-springboot-mcp-server:
+              command: java
+              args:
+                - -Dspring.ai.mcp.server.stdio=true
+                - -Dspring.main.web-application-type=none
+                - -Dspring.main.banner-mode=off
+                - -jar
+                - D:\code\mcp\java\mcp-service\target\mcp-service-0.0.1-SNAPSHOT.jar
+    openai:
+      api-key: sk-29d7a50e9ae54561b959b31cc4724e65
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/
+      chat:
+        options:
+          model: qwen2.5-7b-instruct-1m
+          multi-model: true
+server:
+  port: 8090
+

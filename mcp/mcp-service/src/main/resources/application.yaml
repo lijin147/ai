@@ -1,0 +1,25 @@
+#spring.application.name=mcp-service
+#spring.main.bannerMode=off
+#logging.pattern.console=
+
+spring:
+  output:
+    ansi:
+      enabled: never
+  application:
+    name: ai-springboot-mcp-server
+  main:
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: ai-springboot-mcp-server
+        version: 0.0.1
+
+
+# ?????
+logging:
+  level:
+    root: OFF  # ????????????
+  file:
+    name: server.log  # ?????????

@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/mcp/mcp-client/pom.xml" />
         <option value="$PROJECT_DIR$/mcp/mcp-service/pom.xml" />
+        <option value="$PROJECT_DIR$/springai/pom.xml" />
+        <option value="$PROJECT_DIR$/springai/springai-demo/pom.xml" />
       </list>
     </option>
   </component>
